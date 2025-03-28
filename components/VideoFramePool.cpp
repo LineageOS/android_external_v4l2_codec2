@@ -13,6 +13,7 @@
 #include <C2BlockInternal.h>
 #include <bufferpool/BufferPoolTypes.h>
 
+#include <android/hardware_buffer.h>
 #include <android/hardware/graphics/common/1.0/types.h>
 #include <base/bind.h>
 #include <base/memory/ptr_util.h>
@@ -33,6 +34,9 @@ std::optional<uint32_t> VideoFramePool::getBufferIdFromGraphicBlock(C2BlockPool&
                                                                     const C2Block2D& block) {
     ALOGV("%s() blockPool.getAllocatorId() = %u", __func__, blockPool.getAllocatorId());
 
+    std::shared_ptr<_C2BlockPoolData> blockPoolData;
+    struct AHardwareBuffer *buf;
+
     switch (blockPool.getAllocatorId()) {
     case V4L2AllocatorId::SECURE_GRAPHIC:
         FALLTHROUGH;
@@ -43,11 +47,33 @@ std::optional<uint32_t> VideoFramePool::getBufferIdFromGraphicBlock(C2BlockPool&
         }
         return dmabufId.value();
     }
+    case C2PlatformAllocatorStore::IGBA: {
+        blockPoolData = _C2BlockFactory::GetGraphicBlockPoolData(block);
+        if (blockPoolData->getType() != _C2BlockPoolData::TYPE_AHWBUFFER) {
+            ALOGE("Blockpool type must be AHardwareBuffer for IGBA.");
+            return std::nullopt;
+        }
+        if (!_C2BlockFactory::GetAHardwareBuffer(blockPoolData, &buf)) {
+            ALOGE("Failed to GetAHardwareBuffer() for IGBA.");
+            return std::nullopt;
+        }
+        uint64_t id;
+        if (__builtin_available(android 31, *)) {
+            if (AHardwareBuffer_getId(buf, &id) != OK) {
+                ALOGE("Failed to getId for AHardwareBuffer.");
+                return std::nullopt;
+            }
+            return static_cast<uint32_t>(id);
+        } else {
+            // Fallback for Android 30 and below: use buffer address as ID
+            id = reinterpret_cast<uint64_t>(buf);
+            return static_cast<uint32_t>(id);
+        }
+    }
     case C2PlatformAllocatorStore::GRALLOC:
         FALLTHROUGH;
     case V4L2AllocatorId::SECURE_LINEAR: {
-        std::shared_ptr<_C2BlockPoolData> blockPoolData =
-                _C2BlockFactory::GetGraphicBlockPoolData(block);
+        blockPoolData = _C2BlockFactory::GetGraphicBlockPoolData(block);
         if (blockPoolData->getType() != _C2BlockPoolData::TYPE_BUFFERPOOL) {
             ALOGE("Obtained C2GraphicBlock is not bufferpool-backed.");
             return std::nullopt;
