@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a7e080f_da37200b",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-12T20:23:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "76e3cb5e_4ff4b5b5",
+      "revId": "790fb7254754e39af5cdf712db9b8cc173e09960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3bd5a513_a11c7459",
@@ -48,6 +66,30 @@
       "writtenOn": "2026-06-12T19:35:53Z",
       "side": 1,
       "message": "Not need for nullptr here\n\n```suggestion\n        struct AHardwareBuffer *buf;\n```",
+      "range": {
+        "startLine": 50,
+        "startChar": 35,
+        "endLine": 50,
+        "endChar": 45
+      },
+      "revId": "790fb7254754e39af5cdf712db9b8cc173e09960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ea2932c_0758739e",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-12T20:23:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3bd5a513_a11c7459",
       "range": {
         "startLine": 50,
         "startChar": 35,
