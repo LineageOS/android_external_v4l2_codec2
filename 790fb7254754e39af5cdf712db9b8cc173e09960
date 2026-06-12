@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d1224a3_bed92e5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T19:35:53Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/_/android/platform/frameworks/av/+/72dfba67d1340a4d372915cfe77ad8fea354dd71\n\nMight be a better source for this",
+      "revId": "790fb7254754e39af5cdf712db9b8cc173e09960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76e3cb5e_4ff4b5b5",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T19:35:53Z",
+      "side": 1,
+      "message": "if (blockPoolData-\u003egetType() !\u003d _C2BlockPoolData::TYPE_AHWBUFFER) {\n        return std::nullopt;\n    }",
+      "revId": "790fb7254754e39af5cdf712db9b8cc173e09960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3bd5a513_a11c7459",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T19:35:53Z",
+      "side": 1,
+      "message": "Not need for nullptr here\n\n```suggestion\n        struct AHardwareBuffer *buf;\n```",
+      "range": {
+        "startLine": 50,
+        "startChar": 35,
+        "endLine": 50,
+        "endChar": 45
+      },
+      "revId": "790fb7254754e39af5cdf712db9b8cc173e09960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
