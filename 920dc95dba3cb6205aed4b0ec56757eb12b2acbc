@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd9d0bee_99aa155a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T20:17:09Z",
+      "side": 1,
+      "message": "Don\u0027t know how v4l2 should behave, but makes sense from a logical point of view",
+      "revId": "920dc95dba3cb6205aed4b0ec56757eb12b2acbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
