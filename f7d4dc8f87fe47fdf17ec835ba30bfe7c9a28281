@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26c13304_cb674fd7",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T19:37:14Z",
+      "side": 1,
+      "message": "not related to AIDL?",
+      "revId": "f7d4dc8f87fe47fdf17ec835ba30bfe7c9a28281",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02c76ded_9f263de8",
+        "filename": "components/VideoFramePool.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T19:37:14Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "f7d4dc8f87fe47fdf17ec835ba30bfe7c9a28281",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
