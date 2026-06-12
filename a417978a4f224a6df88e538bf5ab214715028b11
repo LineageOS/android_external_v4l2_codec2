@@ -34,6 +34,24 @@
       "parentUuid": "576ae344_41454818",
       "revId": "a417978a4f224a6df88e538bf5ab214715028b11",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f540edb_292728c3",
+        "filename": "v4l2/V4L2Device.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 1464,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-12T20:41:01Z",
+      "side": 1,
+      "message": "This can be a followup commit, but is probably easily enough done. I only did this one to silence a logcat warning.",
+      "parentUuid": "da083194_5d00f096",
+      "revId": "a417978a4f224a6df88e538bf5ab214715028b11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
