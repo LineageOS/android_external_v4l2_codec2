@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32d646cd_b624dc10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T20:09:18Z",
+      "side": 1,
+      "message": "This will likely bite you as soon as you move to 10bit formats, but unless it\u0027s made dynamic this will always be a chicken egg problem",
+      "revId": "d9628dde66e8066e0b9b360812e0730bbcb26fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
