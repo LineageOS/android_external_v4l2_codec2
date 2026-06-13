@@ -16,6 +16,24 @@
       "message": "Why not make it opt-out?",
       "revId": "0834f3b2d4709fe5cdc722d38546846549ce586b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df7045e3_fd2ae3e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-13T02:17:40Z",
+      "side": 1,
+      "message": "Because I suspect all devices will have a shorter list of opt-ins, than they would opt-outs. sm8550 and sm8750 only enable 3 of the decoders and 0 of the encoders right now.",
+      "parentUuid": "a221f6ec_ef0cb86d",
+      "revId": "0834f3b2d4709fe5cdc722d38546846549ce586b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
