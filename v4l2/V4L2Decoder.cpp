@@ -38,6 +38,8 @@ bool waitForDRC(const C2ConstLinearBlock& input, std::optional<VideoCodec> codec
     const uint8_t kVP9FrameTypeMask = 0x4;
     // frame type takes the (0) position in first byte of VP8 uncompressed header
     const uint8_t kVP8FrameTypeMask = 0x1;
+    // frame type takes the (1-2) positions in first byte of AV1 uncompressed header
+    const uint8_t kAV1FrameTypeMask = 0x6;
 
     switch (*codec) {
     case VideoCodec::H264: {
@@ -56,6 +58,9 @@ bool waitForDRC(const C2ConstLinearBlock& input, std::optional<VideoCodec> codec
     case VideoCodec::VP8:
         // 0 - key frame; 1 - interframe;
         return ((pos[0] & kVP8FrameTypeMask) == 0);
+    case VideoCodec::AV1:
+        // 0 - key frame; 1 - interframe;
+        return ((pos[0] & kAV1FrameTypeMask) == 0);
     }
 
     return false;
