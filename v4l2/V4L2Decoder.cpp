@@ -56,6 +56,28 @@ bool waitForDRC(const C2ConstLinearBlock& input, std::optional<VideoCodec> codec
     case VideoCodec::VP8:
         // 0 - key frame; 1 - interframe;
         return ((pos[0] & kVP8FrameTypeMask) == 0);
+    case VideoCodec::AV1: {
+        if (view.capacity() < 2) return false;
+
+        uint8_t header = pos[0];
+        int obu_type = (header >> 3) & 0xF;
+        if (obu_type != 3) return false; // != OBU_FRAME_HEADER
+
+        int offset = 1;
+
+        // Skip extension
+        if ((header >> 2) & 1) offset++;
+        // Skip size
+        if ((header >> 1) & 1) {
+            while (offset < view.capacity() && (pos[offset] & 0x80)) offset++;
+            if (offset < view.capacity()) offset++;
+        }
+
+        if (offset >= view.capacity()) return false;
+
+        uint8_t frame_type = (pos[offset] >> 6) & 0x3;
+        return frame_type == 0;  // = KEY_FRAME
+    }
     }
 
     return false;
