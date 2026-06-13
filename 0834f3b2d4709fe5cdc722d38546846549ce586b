@@ -34,6 +34,24 @@
       "parentUuid": "a221f6ec_ef0cb86d",
       "revId": "0834f3b2d4709fe5cdc722d38546846549ce586b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5fa1131_8d64697b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-06-13T08:06:08Z",
+      "side": 1,
+      "message": "It would be pretty funny if you were to implement a media_codecs.xml parser and check what is enabled, so it has a single config file instead of file + props\n\nAn LLM may do that easily",
+      "parentUuid": "df7045e3_fd2ae3e1",
+      "revId": "0834f3b2d4709fe5cdc722d38546846549ce586b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
