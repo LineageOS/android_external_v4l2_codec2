@@ -2160,6 +2160,9 @@ size_t V4L2Device::getNumPlanesOfV4L2PixFmt(uint32_t pixFmt) {
     if (fourcc && fourcc->isMultiPlanar()) {
         return numPlanes(fourcc->toVideoPixelFormat());
     }
+    if (pixFmt == V4L2_PIX_FMT_P010) {
+        return 2u;
+    }
     return 1u;
 }
 

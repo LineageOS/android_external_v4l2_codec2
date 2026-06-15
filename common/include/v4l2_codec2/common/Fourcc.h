@@ -109,6 +109,8 @@ public:
         // Maps to V4L2_PIX_FMT_MM21.
         // It is used for MT8183 hardware video decoder.
         MM21 = composeFourcc('M', 'M', '2', '1'),
+
+        P010 = composeFourcc('P', '0', '1', '0'),
     };
 
     explicit Fourcc(Fourcc::Value fourcc);
