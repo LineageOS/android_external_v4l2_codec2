@@ -16,6 +16,24 @@
       "message": "Are you planning to rebase this repository in the future?",
       "revId": "cde671a9c6a45e6fecd1ef0ef9e34f03113b9dc7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f95f204d_44e2d3a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-16T18:35:32Z",
+      "side": 1,
+      "message": "v4l2_codec2 is an aosp repo. So... yes. Every aosp drop.",
+      "parentUuid": "66ab65e1_956a7ac5",
+      "revId": "cde671a9c6a45e6fecd1ef0ef9e34f03113b9dc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
