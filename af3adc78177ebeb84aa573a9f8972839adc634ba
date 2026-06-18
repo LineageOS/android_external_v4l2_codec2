@@ -22,6 +22,30 @@
       },
       "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c9e9f13_81249599",
+        "filename": "common/VideoPixelFormat.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-06-18T01:57:34Z",
+      "side": 1,
+      "message": "Padding and alignment, based on what I read. It\u0027s a 10 bit format, but uses 2 byte / 16 bit storage.",
+      "parentUuid": "7dc7f6b7_d967920a",
+      "range": {
+        "startLine": 141,
+        "startChar": 0,
+        "endLine": 141,
+        "endChar": 32
+      },
+      "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
