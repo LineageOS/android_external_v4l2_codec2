@@ -70,6 +70,63 @@
       },
       "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fdfd4787_e1215365",
+        "filename": "common/include/v4l2_codec2/common/Fourcc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-20T19:36:00Z",
+      "side": 1,
+      "message": "https://linuxtv.org/downloads/v4l-dvb-apis/userspace-api/v4l/pixfmt-yuv-planar.html",
+      "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ef9eec2_aee37b14",
+        "filename": "common/include/v4l2_codec2/common/VideoPixelFormat.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-20T19:36:00Z",
+      "side": 1,
+      "message": "P010,    // 15bpp with Y plane followed by a 2x2 interleaved UV plane.",
+      "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "083eb102_aa9f12f6",
+        "filename": "v4l2/V4L2Device.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2165,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-20T19:36:00Z",
+      "side": 1,
+      "message": "Should be dropped.",
+      "range": {
+        "startLine": 2163,
+        "startChar": 0,
+        "endLine": 2165,
+        "endChar": 5
+      },
+      "revId": "af3adc78177ebeb84aa573a9f8972839adc634ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
